@@ -1,30 +1,30 @@
 import { fizzBuzz } from './for.fizzBuzz'
 
 describe('', () => {
-  it('given a number must return a list starting at 1 and whose length is the same as the number.', () => {
+  it('given a number should return a list that starts on 1 and ends with that number', () => {
     const given = 5
-    const result = fizzBuzz(given)
+    const listOfNumbers = fizzBuzz(given)
 
-    expect(result).toEqual([1, 2, 'fizz', 4, 'buzz'])
+    expect(listOfNumbers).toEqual([1, 2, 'fizz', 4, 'buzz'])
   })
 
   it('Every time a number in that list is divisible by 3 replace the number with "fizz"', () => {
     const given = 3
-    const result = fizzBuzz(given)
+    const listOfNumbers = fizzBuzz(given)
 
-    expect(result).toEqual([1, 2, 'fizz'])
+    expect(listOfNumbers).toEqual([1, 2, 'fizz'])
   })
   it('Every time a number in that list is divisible by 5 replace the number with "buzz"', () => {
     const given = 5
-    const result = fizzBuzz(given)
+    const listOfNumbers = fizzBuzz(given)
 
-    expect(result).toEqual([1, 2, 'fizz', 4, 'buzz'])
+    expect(listOfNumbers).toEqual([1, 2, 'fizz', 4, 'buzz'])
   })
   it('Every time a number in that list is divisible by 3 and 5 replace the number with "fizzbuzz"', () => {
     const given = 15
-    const result = fizzBuzz(given)
+    const listOfNumbers = fizzBuzz(given)
 
-    expect(result).toEqual([
+    expect(listOfNumbers).toEqual([
       1,
       2,
       'fizz',
